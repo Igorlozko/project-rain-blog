@@ -50,10 +50,70 @@ Flashing of the console a flickering effect was solved by rendering
 
 ## Modern C++
 
-- vectors
-- algorithms
-- iterators
+## Code Explained 
 
-You can add an image that has been uploaded to the repository in a /docs/assets/images folder.
+### Digital Rain.cpp
 
-<img src="https://raw.githubusercontent.com/melgineer/digital-rain-cpp/main/docs/assets/images/Robin_260921_1200.jpg" width="100" height="100">
+    Implemintation of the digital rain and definitions for the constructor and the start method 
+
+    ### Constructor:
+
+    The constructor initializes the DigitalRain object with the specified parameters:
+        1. Width, height: Sets the screen dimensions.
+        2. Frequency: Determines the frequency of raindrops.
+        3. Start, end: Specifies the range of ASCII values for generating random characters.
+        
+    It initializes member variables:
+        1. ScreenWidth, screenHeight: Set to the provided width and height.
+        2. GaindropFrequency, asciiRangeStart, asciiRangeEnd: Set to the provided values.
+        3. Grid: Initializes the grid vector with height rows and width columns, filled with spaces.
+        4. NextGrid: Initializes the nextGrid vector with the same size as grid, filled with spaces.
+        5. VerticalDisplacement: Initializes the verticalDisplacement vector with the same size as grid, filled with zeros.
+        
+    Additionally, it seeds the random number generator using the current time.
+
+    ### Start Method:
+
+    This method starts the digital rain effect by continuously updating the state of the screen and rendering the raindrops.
+    It runs an infinite loop where each iteration represents a frame of the digital rain animation.
+    Within the loop:
+        It updates the nextGrid with new raindrops based on the specified frequency.
+        Renders the raindrops on the screen without clearing it, allowing for the raindrops to accumulate over time.
+        Swaps the grid and nextGrid.
+        Moves raindrops down gradually and decreases their vertical displacement.
+        Clears the top row of the nextGrid and resets the vertical displacement for the newly spawned raindrops.
+        Sleeps for a short duration to control the speed of the rain animation.
+
+    
+    
+    ### Algorithim used in digitalrain
+
+    1. Initialization:
+
+    The method starts with an infinite loop, representing continuous animation frames.
+    In each iteration of the loop:
+    The nextGrid is updated with new raindrops based on the specified frequency.
+    Vertical displacement for each raindrop is reset.
+    
+    2. Rendering:
+
+    The raindrops are rendered onto the screen without clearing it, allowing for accumulation over time.
+    For each cell in the grid:
+    If a raindrop is present (nextGrid[y][x] != ' '):
+    The cursor is moved to the position (x, y + verticalDisplacement[y][x]) to ensure raindrops fall vertically.
+    The raindrop character, preceded by spaces, is printed in green color using ANSI escape codes.
+    The vertical displacement for the raindrop is incremented.
+
+    3. Update:
+
+    The grid and nextGrid are swapped, updating the raindrop positions.
+    Raindrops are moved down gradually by copying them from grid to nextGrid and reducing their vertical displacement.
+    The top row of nextGrid and associated vertical displacements are cleared to prepare for new raindrops.
+
+    4. Animation Control:
+
+    A short delay is introduced using std::this_thread::sleep_for to control the speed of the rain animation.
+
+    Overall, this algorithm continuously updates and renders the raindrops, creating a digital rain effect where characters 
+    fall from the top of the screen to the bottom, accumulating over time. The use of vertical displacement ensures that raindrops 
+    fall vertically without overlapping, creating a visually appealing animation.
