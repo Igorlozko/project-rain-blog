@@ -54,7 +54,9 @@ Flashing of the console a flickering effect was solved by rendering
 
 ### Digital Rain.cpp
 
-    Implemintation of the digital rain and definitions for the constructor and the start method 
+    Implemintation of the digital rain and definitions for the constructor and the start method.
+
+    <img src="https://raw.githubusercontent.com/igorlozko/project-rain-blog/main/docs/assets/images/Picture5.png" width="600" height="600">
 
     ### Constructor:
 
