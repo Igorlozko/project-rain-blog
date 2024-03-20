@@ -6,7 +6,7 @@ categories: demo
 ---
 ## Introduction
 
-Digital rain is a visual effect of numbers and characters moving from top to bottom of the screen simulating a rainfall. I’ll discuss the development process, problem solving and technical conclusions that I came across during this project.
+Digital rain is a visual effect of numbers and characters moving from top to bottom of the screen simulating a rainfall. I’ll discuss the development process, problem solving and technical conclusions that I came across during this project. The end goal of this project is to achieve a matrix effect of numbers and charracters falling down the console. Planning, design and technologies like algorithims will be used to achieve this effect.
 
 ### Project Demo
 <img src="https://raw.githubusercontent.com/igorlozko/project-rain-blog/main/docs/assets/images/Picture1.png" width="800" height="400">
