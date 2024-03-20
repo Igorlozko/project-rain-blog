@@ -52,6 +52,18 @@ Flashing of the console a flickering effect was solved by rendering
 
 ## Code Explained 
 
+<img src="https://raw.githubusercontent.com/igorlozko/project-rain-blog/main/docs/assets/images/Picture6.png" width="600" height="600">
+
+I include the necessary header files iostream for input and output and DigitalRain header
+
+Main initializes the parameters such as screenWidth, screenHeight, raindropFrequency, asciiRangeStart, asciiRangeEnd
+
+Digital rain obkect line 14 instance of the digital rain class created with specific parametes 
+responsible for generating and rendering the digital rain effect
+
+start method runs indefinetly controlled byt he while(true) updating constantly 
+
+
 ### Digital Rain .h file
 
 <img src="https://raw.githubusercontent.com/igorlozko/project-rain-blog/main/docs/assets/images/Picture7.png" width="600" height="600">
@@ -77,7 +89,7 @@ Flashing of the console a flickering effect was solved by rendering
 
     Implemintation of the digital rain and definitions for the constructor and the start method.
 
-    ### Constructor:
+    Constructor:
 
     The constructor initializes the DigitalRain object with the specified parameters:
         1. Width, height: Sets the screen dimensions.
@@ -93,7 +105,7 @@ Flashing of the console a flickering effect was solved by rendering
         
     Additionally, it seeds the random number generator using the current time.
 
-    ### Start Method:
+    Start Method:
 
     This method starts the digital rain effect by continuously updating the state of the screen and rendering the raindrops.
     It runs an infinite loop where each iteration represents a frame of the digital rain animation.
@@ -107,7 +119,7 @@ Flashing of the console a flickering effect was solved by rendering
 
     
     
-    ### Algorithim used in digitalrain
+    Algorithim used in digitalrain
 
     1. Initialization:
 
