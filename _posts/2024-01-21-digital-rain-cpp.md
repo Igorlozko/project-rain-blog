@@ -17,6 +17,12 @@ Digital rain is a visual effect of numbers and characters moving from top to bot
 
 I adopted an object-oriented approach to encapsulate the Digital Rain simulation's components, including the grid layout, raindrop behaviour, and rendering mechanism. I designed classes to represent the simulation and individual raindrops, ensuring modularity and extensibility. This involved defining clear interfaces and data structures to facilitate seamless interaction between components.
 
+### Project goals 
+- Green characters and letters falling from top to bottom
+- Charcters must be random and must change as they fall mimicing the rainfall droplets which dont stay the same chape as they fall as they are shaped by the wind.
+- Using algorithims
+- Clearing and rendering project
+
 ### Design Overview
 
 The DigitalRain class is designed to simulate a digital rain effect similar to the one seen in "The Matrix" movie. It utilizes a grid-based approach to represent the characters falling down the screen. The design includes the following key components:
@@ -28,12 +34,6 @@ The DigitalRain class is designed to simulate a digital rain effect similar to t
 **Vertical Displacement:** Each raindrop has a vertical displacement value, which determines how far down the screen it has moved. This allows for the simulation of raindrops falling at different speeds.
 
 **Rendering and Animation:** The raindrops are rendered on the screen using ANSI escape codes to control the cursor position and color. The animation is achieved by continuously updating the grid and shifting characters downward.
-
-### Project goals 
-- Green characters and letters falling from top to bottom
-- Charcters must be random and must change as they fall mimicing the rainfall droplets which dont stay the same chape as they fall as they are shaped by the wind.
-- Using algorithims
-- Clearing and rendering project
 
 ## **Algorithm**
 
