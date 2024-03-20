@@ -13,7 +13,10 @@ image here ...
 
 ## Design and Test
 
-This is a paragraph. Add an empty line to start a new paragraph.
+### Planning 
+
+I adopted an object-oriented approach to encapsulate the Digital Rain simulation's components, including the grid layout, raindrop behaviour, and rendering mechanism. I designed classes to represent the simulation and individual raindrops, ensuring modularity and extensibility. This involved defining clear interfaces and data structures to facilitate seamless interaction between components.
+expand more on this 
 
 ## Algorithm
 
