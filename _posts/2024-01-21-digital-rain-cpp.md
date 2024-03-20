@@ -56,6 +56,12 @@ Flashing of the console a flickering effect was solved by rendering
 
 ## Modern C++
 
+Modern C++" encapsulates a contemporary approach to software development using the C++ programming language. Embracing the evolution of the language, Modern C++ emphasizes leveraging the latest features and best practices introduced in newer standards, such as C++11 and beyond. 
+
+This approach advocates for writing code that is not only efficient and performant but also expressive, readable, and maintainable. By incorporating features like smart pointers, lambda expressions, range-based loops, and type inference, we can streamline their codebase while enhancing its clarity and robustness. 
+
+In this project solutions that efficiently manage memory, utilize object-oriented design principles, and potentially exploit concurrency for optimal performance. 
+
 ## Code Explained 
 
 ### Digital Rain main file
