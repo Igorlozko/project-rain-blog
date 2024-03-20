@@ -32,13 +32,13 @@ Object-oriented programming (OOP) played a crucial role in structuring the Digit
 
 A key focus throughout the development process was sustainability. This involved writing clean, maintainable code that could withstand future changes and enhancements. Comments and documentation were added where necessary to improve code readability and understanding.
 
-<img src="https://raw.githubusercontent.com/igorlozko/project-rain-blog/main/docs/assets/images/Picture3.png" width="900" height="100">
+<img src="https://raw.githubusercontent.com/igorlozko/project-rain-blog/main/docs/assets/images/Picture3.png" width="900" height="200">
 
 ## New Technologies 
 
 One of the new technologies I explored was the ANSI escape codes for terminal manipulation. This allowed me to control the cursor movement, text colour and formatting enhancing the visual aspect of digital rain. This can be seen below 
 
-<img src="https://raw.githubusercontent.com/igorlozko/project-rain-blog/main/docs/assets/images/Picture4.png" width="900" height="100">
+<img src="https://raw.githubusercontent.com/igorlozko/project-rain-blog/main/docs/assets/images/Picture4.png" width="900" height="200">
 
 Multithreading with std:thread explored multithreading the std::thread library. It was employed to achieve a concurrent execution of the digital rain simulation alongside the main program flow, ensuring smooth animations rendering without blocking the user input or the operation.
 
