@@ -1,8 +1,8 @@
 ---
-layout: Blog post
-title: C++ Digital Rain Project
-tags: C++ coding project
-categories: Demonstration
+layout: post
+title: A Project in Modern C++
+tags: cpp coding project
+categories: demo
 ---
 ## Introduction
 
