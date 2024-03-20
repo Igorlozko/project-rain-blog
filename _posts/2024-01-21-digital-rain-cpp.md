@@ -72,10 +72,10 @@ I include the necessary header files iostream for input and output and DigitalRa
 
 Main initializes the parameters such as screenWidth, screenHeight, raindropFrequency, asciiRangeStart, asciiRangeEnd
 
-Digital rain obkect line 14 instance of the digital rain class created with specific parametes 
+Digital rain object instance of the digital rain class created with specific parametes 
 responsible for generating and rendering the digital rain effect
 
-start method runs indefinetly controlled byt he while(true) updating constantly 
+start method runs indefinetly controlled by the while(true) updating constantly.
 
 
 ### Digital Rain .h file
