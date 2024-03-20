@@ -52,6 +52,8 @@ Flashing of the console a flickering effect was solved by rendering
 
 ## Code Explained 
 
+### Digital Rain main file
+
 <img src="https://raw.githubusercontent.com/igorlozko/project-rain-blog/main/docs/assets/images/Picture6.png" width="800" height="400">
 
 I include the necessary header files iostream for input and output and DigitalRain header
