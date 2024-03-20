@@ -17,13 +17,13 @@ Digital rain is a visual effect of numbers and characters moving from top to bot
 
 The DigitalRain class is designed to simulate a digital rain effect similar to the one seen in "The Matrix" movie. It utilizes a grid-based approach to represent the characters falling down the screen. The design includes the following key components:
 
-Grid Representation: The rain effect is modeled using a grid, where each cell corresponds to a character position on the screen. The grid is represented using a two-dimensional vector of characters.
+**Grid Representation:** The rain effect is modeled using a grid, where each cell corresponds to a character position on the screen. The grid is represented using a two-dimensional vector of characters.
 
-Random Raindrops Generation: Raindrops are randomly generated at the top of the screen with a specified frequency. When a raindrop is generated, a random character from a specified ASCII range is assigned to it.
+**Random Raindrops Generation:** Raindrops are randomly generated at the top of the screen with a specified frequency. When a raindrop is generated, a random character from a specified ASCII range is assigned to it.
 
-Vertical Displacement: Each raindrop has a vertical displacement value, which determines how far down the screen it has moved. This allows for the simulation of raindrops falling at different speeds.
+**Vertical Displacement:** Each raindrop has a vertical displacement value, which determines how far down the screen it has moved. This allows for the simulation of raindrops falling at different speeds.
 
-Rendering and Animation: The raindrops are rendered on the screen using ANSI escape codes to control the cursor position and color. The animation is achieved by continuously updating the grid and shifting characters downward.
+**Rendering and Animation:** The raindrops are rendered on the screen using ANSI escape codes to control the cursor position and color. The animation is achieved by continuously updating the grid and shifting characters downward.
 
 ### Planning 
 
@@ -40,13 +40,13 @@ I adopted an object-oriented approach to encapsulate the Digital Rain simulation
 ### Algorithmic Approach
 The core algorithm behind the Digital Rain simulation revolves around the management of raindrop descent and rendering. Raindrops are randomly generated at the top of the screen and gradually descend while leaving a trail of characters behind. The algorithm ensures smooth descent and prevents overlap between raindrops, resulting in a visually appealing effect.
 
-The DigitalRain class employs several algorithms to achieve the desired digital rain effect:
+**The DigitalRain class employs several algorithms to achieve the desired digital rain effect:**
 
-Random Raindrop Generation: The algorithm generates raindrops randomly at the top of the screen with a specified frequency. It uses the rand() function to generate random numbers and assigns a random character from the specified ASCII range to each raindrop.
+**Random Raindrop Generation:** The algorithm generates raindrops randomly at the top of the screen with a specified frequency. It uses the rand() function to generate random numbers and assigns a random character from the specified ASCII range to each raindrop.
 
-Grid Update: The algorithm updates the grid to move raindrops downward and clear the top row. It shifts characters downward in the grid, updates the vertical displacement values, and clears the top row to simulate new raindrops entering the screen.
+**Grid Update:** The algorithm updates the grid to move raindrops downward and clear the top row. It shifts characters downward in the grid, updates the vertical displacement values, and clears the top row to simulate new raindrops entering the screen.
 
-Rendering and Animation: The algorithm renders the raindrops on the screen using ANSI escape codes to control cursor position and color. It iterates over the grid, adjusts the cursor position based on the vertical displacement of each raindrop, and prints characters with appropriate color codes.
+**Rendering and Animation:** The algorithm renders the raindrops on the screen using ANSI escape codes to control cursor position and color. It iterates over the grid, adjusts the cursor position based on the vertical displacement of each raindrop, and prints characters with appropriate color codes.
 
 <img src="https://raw.githubusercontent.com/igorlozko/project-rain-blog/main/docs/assets/images/Picture2.png" width="600" height="300">
 
@@ -71,13 +71,13 @@ Multithreading with std:thread explored multithreading the std::thread library. 
 
 Several problem-solving initiatives were undertaken to overcome challenges encountered during development. Optimal raindrop rendering, preventing flickering and overlap, required innovative solutions. The introduction of vertical displacement tracking, and manipulation of ANSI escape codes played a pivotal role in achieving smooth raindrop descent.
 
-The DigitalRain class addresses several challenges to achieve the digital rain effect:
+**The DigitalRain class addresses several challenges to achieve the digital rain effect:**
 
-Efficient Raindrop Generation: To generate raindrops randomly at the top of the screen, the class must efficiently select random positions and characters. The algorithm uses the rand() function and appropriate logic to achieve this while maintaining performance.
+**Efficient Raindrop Generation:** To generate raindrops randomly at the top of the screen, the class must efficiently select random positions and characters. The algorithm uses the rand() function and appropriate logic to achieve this while maintaining performance.
 
-Smooth Animation: The class must ensure that the animation remains smooth even when simulating a large number of raindrops falling simultaneously. This requires careful management of grid updates and rendering to minimize flickering and lag.
+**Smooth Animation:** The class must ensure that the animation remains smooth even when simulating a large number of raindrops falling simultaneously. This requires careful management of grid updates and rendering to minimize flickering and lag.
 
-Correct Rendering: The class must accurately render raindrops on the screen and handle cases where raindrops overlap or characters collide. This requires precise control over cursor position and character colors to produce a visually appealing effect.
+**Correct Rendering:** The class must accurately render raindrops on the screen and handle cases where raindrops overlap or characters collide. This requires precise control over cursor position and character colors to produce a visually appealing effect.
 
 Flashing of the console a flickering effect was solved by rendering
 
@@ -89,17 +89,17 @@ This approach advocates for writing code that is not only efficient and performa
 
 In this project solutions that efficiently manage memory, utilize object-oriented design principles, and potentially exploit concurrency for optimal performance. 
 
-The DigitalRain class leverages modern C++ features and techniques to enhance its functionality and readability:
+**The DigitalRain class leverages modern C++ features and techniques to enhance its functionality and readability:**
 
-Smart Pointers: While the code doesn't explicitly use smart pointers, they could be employed to manage memory more efficiently, especially if dynamic memory allocation is involved.
+**Smart Pointers:** While the code doesn't explicitly use smart pointers, they could be employed to manage memory more efficiently, especially if dynamic memory allocation is involved.
 
-Standard Library: The class utilizes standard C++ library components such as vectors, time functions, and threading utilities to implement its functionality.
+**Standard Library:** The class utilizes standard C++ library components such as vectors, time functions, and threading utilities to implement its functionality.
 
-Concurrency: Although not utilized in this specific implementation, modern C++ concurrency features such as std::thread could be employed to improve performance, especially in systems with multiple cores.
+**Concurrency:** Although not utilized in this specific implementation, modern C++ concurrency features such as std::thread could be employed to improve performance, especially in systems with multiple cores.
 
-RAII: Resource Acquisition Is Initialization (RAII) is implicitly used in the class through the initialization of member variables and automatic resource cleanup upon object destruction.
+**RAII:** Resource Acquisition Is Initialization (RAII) is implicitly used in the class through the initialization of member variables and automatic resource cleanup upon object destruction.
 
-Type Inference: The code utilizes explicit type declarations for variables and parameters, but type inference (e.g., auto) could be used to improve code readability in certain contexts.
+**Type Inference:** The code utilizes explicit type declarations for variables and parameters, but type inference (e.g., auto) could be used to improve code readability in certain contexts.
 
 ## Code Explained 
 
