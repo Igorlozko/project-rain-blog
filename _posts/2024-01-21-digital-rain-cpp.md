@@ -52,7 +52,7 @@ Flashing of the console a flickering effect was solved by rendering
 
 ## Code Explained 
 
-### Digital Rain.cpp
+### Digital Rain cpp file
 
     Implemintation of the digital rain and definitions for the constructor and the start method.
 
