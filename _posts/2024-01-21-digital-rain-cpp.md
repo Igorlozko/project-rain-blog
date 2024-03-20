@@ -4,7 +4,7 @@ title: A Project in Modern C++
 tags: cpp coding project
 categories: demo
 ---
-**## Introduction**
+## **Introduction**
 
 Digital rain is a visual effect of numbers and characters moving from top to bottom of the screen simulating a rainfall. I’ll discuss the development process, problem solving and technical conclusions that I came across during this project. The end goal of this project is to achieve a matrix effect of numbers and charracters falling down the console. Planning, design and technologies like algorithims will be used to achieve this effect.
 
