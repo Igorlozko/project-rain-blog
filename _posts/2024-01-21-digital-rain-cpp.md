@@ -13,7 +13,7 @@ Digital rain is a visual effect of numbers and characters moving from top to bot
 
 ## **Design and Test**
 
-### **Planning**
+### Planning
 
 I adopted an object-oriented approach to encapsulate the Digital Rain simulation's components, including the grid layout, raindrop behaviour, and rendering mechanism. I designed classes to represent the simulation and individual raindrops, ensuring modularity and extensibility. This involved defining clear interfaces and data structures to facilitate seamless interaction between components.
 
