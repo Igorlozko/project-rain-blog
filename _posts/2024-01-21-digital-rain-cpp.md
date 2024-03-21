@@ -18,10 +18,10 @@ Digital rain is a visual effect of numbers and characters moving from top to bot
 I adopted an object-oriented approach to encapsulate the Digital Rain simulation's components, including the grid layout, raindrop behaviour, and rendering mechanism. I designed classes to represent the simulation and individual raindrops, ensuring modularity and extensibility. This involved defining clear interfaces and data structures to facilitate seamless interaction between components.
 
 ### Project goals 
-- Green characters and letters falling from top to bottom
-- Charcters must be random and must change as they fall mimicing the rainfall droplets which dont stay the same chape as they fall as they are shaped by the wind.
-- Using algorithims
-- Clearing and rendering project
+- Green characters and letters falling from top to bottom.
+- Characters must change as they fall mimicing raindrops changing as they pass throught the air.
+- Using algorithims and vectors.
+- Clearing and rendering project.
 
 ### Design Overview
 
